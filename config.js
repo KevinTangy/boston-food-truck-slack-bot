@@ -18,7 +18,7 @@ config.locations =  [
 	// watertown-arsenal,
 	// cityhallplaza,
 	// bostonpubliclibrary,
-	// innovationdistrict,
+	'innovationdistrict',
 	// chinatown-gate,
 	// bmc,
 	// watertown-athena,
@@ -55,7 +55,7 @@ config.locations =  [
 ];
 
 // The incoming Slack webhook URL.
-config.slack_url = process.env.SLACK_URL || 'https://slack_webhook_url_goes_here';
+config.slack_url = process.env.SLACK_URL || 'ENV['WEBHOOK_URL']';
 
 config.slack_bot_name = 'FoodTruckBot';
 config.slack_bot_emoji = ':truck:';
