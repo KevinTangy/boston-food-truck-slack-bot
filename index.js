@@ -140,7 +140,7 @@ function buildSlackMessage(found_trucks) {
 	return JSON.stringify(json_obj);
 }
 
-// Schedule a job every Mon-Fri at 16:00 UTC.
-schedule.scheduleJob('00 16 * * 1-5', function(){
+// Schedule a job every Mon-Fri at 15:15 UTC.
+schedule.scheduleJob('15 15 * * 1-5', function(){
 	sendFoodTruckList();
 });
