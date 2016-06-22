@@ -120,6 +120,7 @@ function sendSlackReponse(found_trucks) {
 
 // Builds the Slack message to send.
 function buildSlackMessage(found_trucks) {
+	var now = new Date();
 	var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 	var day = days[ now.getDay() ];
 	var text = '_Happy ' + day + '! Here is your local food truck forecast:_\n';
