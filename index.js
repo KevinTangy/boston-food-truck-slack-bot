@@ -143,6 +143,6 @@ function buildSlackMessage(found_trucks) {
 }
 
 // Schedule a job every Mon-Fri at 15:15 UTC.
-schedule.scheduleJob('15 15 * * 1-5', function(){
+schedule.scheduleJob('*/2 * * * 1-5', function(){
 	sendFoodTruckList();
 });
